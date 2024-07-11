@@ -1,5 +1,10 @@
+import Header from './Header';
+import '../styles.css';
+
 export default function App() {
     return (
-        <h1>Hello from React!</h1>
+        <>
+         <Header/>
+        </>
     );
 }
