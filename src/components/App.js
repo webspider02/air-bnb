@@ -1,3 +1,4 @@
+import Card from './Card';
 import Header from './Header';
 import Hero from './Hero';
 import '../styles.css';
@@ -7,6 +8,7 @@ export default function App() {
         <>
          <Header/>
          <Hero/>
+         <Card/>
         </>
     );
 }
