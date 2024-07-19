@@ -1,5 +1,8 @@
+/* global styles */
 :root {
     --header-color: #EA5B62ff;
+    --sold-out-color: #000000;
+    --sold-out-bg: #ffffff;
 }
 
 * {
@@ -13,9 +16,6 @@ body {
 
 div#root {
     border-radius: 10px;
-    /* border: 1px solid red;
-    width: 300px;
-    height: 300px; */
 }
 
 /* header styles */
@@ -68,7 +68,7 @@ div#root > section#card > div.card-image {
 }
 
 div#root > section#card > div.card-image > div.card-state  {
-    background-color: white;
+    background-color: var(--sold-out-bg);
     width: 100px;
     height: 30px;
     border-radius: 5px;
@@ -81,7 +81,16 @@ div#root > section#card > div.card-image > div.card-state  {
 }
 
 div#root > section#card > div.card-image > div.card-state > p {
-    color: black;
+    color: var(--sold-out-color);
     text-align: center;
     user-select: none;
+}
+
+div#root > section#card > div.card-info > p.soft-text > span {
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+div#root > section#card > div.card-info > p > span {
+    font-weight: bold;
 }
