@@ -6,9 +6,17 @@ import '../styles.css';
 export default function App() {
     return (
         <>
-         <Header/>
+         <Header
+            img="./images/zafiris.png"
+         />
          <Hero/>
-         <Card/>
+         <Card
+            rating="5.0"
+            reviewCount={6}
+            country="USA"
+            title="Life lessons with Katie Zaferes"
+            price={136}
+         />
         </>
     );
 }
