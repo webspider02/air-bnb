@@ -18,13 +18,6 @@ export default function App() {
             title="Life lessons with Katie Zaferes"
             price={136}
          />
-         <Card 
-            rating={data.stats.rating}
-            reviewCount={data.stats.reviewCount}
-            country={data.location}
-            title={data.title}
-            price={data.price}
-         />
         </>
     );
 }
