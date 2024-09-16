@@ -1,6 +1,7 @@
 import Card from './Card';
 import Header from './Header';
 import Hero from './Hero';
+import data from '../data';
 import '../styles.css';
 
 export default function App() {
@@ -16,6 +17,13 @@ export default function App() {
             country="USA"
             title="Life lessons with Katie Zaferes"
             price={136}
+         />
+         <Card 
+            rating={data.stats.rating}
+            reviewCount={data.stats.reviewCount}
+            country={data.location}
+            title={data.title}
+            price={data.price}
          />
         </>
     );
